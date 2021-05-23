@@ -1,13 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
-# Use tradition sort
-export LC_ALL=C
+BASE=../../../vendor/pantech/ef44/proprietary
+rm -rf $BASE/*
 
-FP=$(cd ${0%/*} && pwd -P)
-export VENDOR=$(basename $(dirname $FP))
-export DEVICE=$(basename $FP)
-export BOARDCONFIGVENDOR=true
+for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
+  DIR=`dirname $FILE`
+  if [ ! -d $BASE/$DIR ]; then
+    mkdir -p $BASE/$DIR
+  fi
+  adb pull /system/$FILE $BASE/$FILE
+done
 
-../common/extract-files.sh $@
-
-../common/setup-makefiles.sh
+./setup-makefiles.sh

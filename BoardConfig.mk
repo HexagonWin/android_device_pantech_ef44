@@ -28,3 +28,8 @@ TARGET_OTA_ASSERT_DEVICE := ef44,a840,ef44s,a840s,vega
 
 # inherit from the proprietary version
 -include vendor/pantech/ef44/BoardConfigVendor.mk
+
+# TWRP CONFIGS
+#RECOVERY_VARIANT := twrp
+#TW_THEME := portrait_hdpi
+
