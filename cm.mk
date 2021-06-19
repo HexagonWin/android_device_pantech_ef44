@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := ef44s
+PRODUCT_RELEASE_NAME := ef44
 
 TARGET_BOOTANIMATION_NAME := vertical-720x1280
 
@@ -10,13 +10,13 @@ TARGET_BOOTANIMATION_NAME := vertical-720x1280
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/pantech/ef44s/device_ef44s.mk)
+$(call inherit-product, device/pantech/ef44s/device_ef44.mk)
 
 # Device naming
-PRODUCT_DEVICE := ef44s
-PRODUCT_NAME := cm_ef44s
+PRODUCT_DEVICE := ef44
+PRODUCT_NAME := cm_ef44
 PRODUCT_BRAND := SKY
-PRODUCT_MODEL := IM-A840S
+PRODUCT_MODEL := IM-A840
 PRODUCT_MANUFACTURER := PANTECH
 PRODUCT_DEFAULT_LANGUAGE := ko
 PRODUCT_DEFAULT_REGION := KR

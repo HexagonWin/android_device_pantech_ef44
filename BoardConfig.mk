@@ -33,7 +33,7 @@ COMMON_GLOBAL_CFLAGS += -DEF44S
 TARGET_PROVIDES_INIT_RC := true
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/pantech/ef44s/include
+TARGET_SPECIFIC_HEADER_PATH := device/pantech/ef44/include
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
@@ -48,7 +48,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom andr
 BOARD_FORCE_RAMDISK_ADDRESS := 0x81600000
 
 # Vibrator
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/pantech/ef44s/vibrator/vibrator.c
+BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/pantech/ef44/vibrator/vibrator.c
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
